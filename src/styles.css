@@ -105,7 +105,32 @@ select:focus-visible {
     padding: 22px 14px 32px !important;
   }
 
-  .metrics-grid,
+  .metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .metrics-grid > div {
+    min-height: 132px;
+    padding: 18px 16px !important;
+  }
+
+  .metrics-grid > div > div:first-child {
+    font-size: 24px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .metrics-grid > div > div:nth-child(2) {
+    font-size: 28px !important;
+    line-height: 1.1;
+  }
+
+  .metrics-grid > div > div:last-child {
+    font-size: 12px !important;
+    line-height: 1.25;
+  }
+
   .form-grid {
     grid-template-columns: 1fr !important;
   }
