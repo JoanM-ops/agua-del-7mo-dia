@@ -40,17 +40,19 @@ select:focus-visible {
   .sidebar nav {
     flex-direction: row !important;
     overflow-x: auto;
-    padding: 8px 12px 8px !important;
-    gap: 8px !important;
+    padding: 6px 12px 8px !important;
+    gap: 6px !important;
     flex: 0 0 auto !important;
     scrollbar-width: thin;
+    scroll-snap-type: x proximity;
   }
 
   .sidebar nav button {
     flex: 0 0 auto;
     white-space: nowrap;
     width: auto !important;
-    min-height: 40px;
+    min-height: 36px;
+    scroll-snap-align: start;
   }
 
   .sidebar-logout {
@@ -84,13 +86,19 @@ select:focus-visible {
   }
 
   .sidebar nav button {
-    padding: 9px 12px !important;
+    padding: 8px 10px !important;
     font-size: 12px !important;
+    gap: 7px !important;
+  }
+
+  .sidebar nav button span {
+    font-size: 14px !important;
   }
 
   .sidebar-logout {
-    padding: 8px 12px !important;
-    font-size: 12px !important;
+    padding: 7px 12px !important;
+    font-size: 11px !important;
+    min-height: 34px;
   }
 
   .app-main {
