@@ -6,9 +6,7 @@ Agua del 7mo Día es una aplicacion web para gestionar clientes, rutas y entrega
 
 ## Version publicada
 
-URL de produccion: pendiente de despliegue.
-
-Cuando el proyecto sea publicado en Vercel, Netlify u otra plataforma, colocar aqui el enlace publico final.
+Enlace de producción: https://agua-del-7mo-dia.netlify.app
 
 ## Caso
 
@@ -41,7 +39,8 @@ Agua del 7mo Día digitaliza ese proceso y permite controlar clientes, entregas,
 - JavaScript
 - HTML
 - CSS
-- Firebase
+- Firebase Firestore
+- Netlify
 - Variables de entorno con `import.meta.env`
 
 ## Instalacion local
@@ -95,6 +94,7 @@ Las dependencias estan definidas en `package.json`.
 - `react-dom`
 - `vite`
 - `@vitejs/plugin-react`
+- `firebase`
 
 ## Credenciales de prueba
 
@@ -232,9 +232,7 @@ Componentes reutilizables de interfaz:
 
 ## Regla de deuda critica
 
-La aplicacion marca como deuda critica a los clientes con saldo alto. Actualmente se considera deuda critica cuando un cliente debe 4 o mas botellones.
-
-Esto funciona como aproximacion al problema del caso, donde se pide identificar clientes con mas de 2 semanas de deuda.
+La aplicacion marca como deuda critica a los clientes con saldo pendiente de 4 o mas botellones. Esta regla funciona como una aproximacion automatica al problema del caso, donde se pide identificar clientes con mas de 2 semanas de deuda acumulada.
 
 ## Accesibilidad y responsive
 
