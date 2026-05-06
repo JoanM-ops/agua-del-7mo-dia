@@ -79,6 +79,7 @@ export default function Sidebar({ view, setView }) {
       </nav>
 
       <button
+        className="sidebar-logout"
         onClick={logout}
         aria-label="Cerrar sesión"
         style={{
