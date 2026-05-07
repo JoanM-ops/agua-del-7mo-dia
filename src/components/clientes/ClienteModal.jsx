@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { validarTelefono } from '../../utils/helpers';
 import { Field, Input, Select, Button } from '../ui/UI';
 
-const ZONAS = ['Norte', 'Sur', 'Este', 'Metro'];
+const ZONAS = ['DN', 'SDN', 'SDE', 'SDO'];
 const FRECUENCIAS = ['semanal', 'quincenal'];
-const EMPTY = { nombre: '', direccion: '', telefono: '', zona: 'Norte', frecuencia: 'semanal', saldo: 0 };
+const EMPTY = { nombre: '', direccion: '', telefono: '', zona: 'DN', frecuencia: 'semanal', saldo: 0 };
 
 export default function ClienteModal({ data, onClose, onSave }) {
   const [form, setForm]     = useState(data ? { ...data } : { ...EMPTY });

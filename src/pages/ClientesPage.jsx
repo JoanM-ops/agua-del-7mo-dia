@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useClientes } from '../hooks/useClientes';
 import { deudaAlta } from '../utils/helpers';
-const ZONAS = ['Norte', 'Sur', 'Este', 'Metro'];
+const ZONAS = ['DN', 'SDN', 'SDE', 'SDO'];
 import { PageTitle, Badge, Button } from '../components/ui/UI';
 import ClienteModal from '../components/clientes/ClienteModal';
 
