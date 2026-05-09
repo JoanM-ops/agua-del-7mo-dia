@@ -1,6 +1,6 @@
 import { useApp } from '../context/AppContext';
 import { today, mesActual, deudaAlta, formatFecha } from '../utils/helpers';
-import { PageTitle, MetricCard, SectionLabel, Badge, Card, Table } from '../components/ui/UI';
+import { PageTitle, MetricCard, SectionLabel, Card, Table } from '../components/ui/UI';
 
 export default function DashboardPage() {
   const { clientes, entregas } = useApp();
